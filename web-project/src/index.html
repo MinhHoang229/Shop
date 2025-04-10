@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" href="Icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="scripts" href="scripts/app.js">
+    
+</head>
+
+<body>
+    <header class="navbar">
+       <a href="index.html"> <img  class="logo"  src="img/logo.png" ></a>
+    
+     </img>
+        <nav>
+            <ul>
+               <li><a href="products.html">Sản phẩm </a></li>
+                <li><a href="#">Sale</a></li>
+                <li><a href="#">Áo nam</a></li>
+                <li><a href="#">Quần nam</a></li>
+                <li><a href="#">Bộ sưu tập</a></li>
+                <li><a href="#">Hệ thống cửa hàng</a></li>
+                <li><a href="#">Ưu đãi</a></li>
+            </ul>
+        </nav>
+        <!-- From Uiverse.io by alexruix --> 
+<div class="group">
+    <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+        <g>
+            <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+        </g>
+    </svg>
+    <input placeholder="Search" type="search" class="input">
+</div>
+        <div class="icons">
+            <a href="giohang.html">
+            <button class="btnshopping">
+                <!-- <i class="" style="font-size: 28px"></i> -->
+                <svg  height="28" width="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5a5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z" fill="currentColor"/>
+                </svg>
+            </button>
+        </a>
+            <button class="btnlogin">
+                <svg height="26" width="26" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z" fill="currentColor"/>
+                </svg>
+            </button>
+
+            <!-- Cart Modal -->
+          
+            <script>
+                document.addEventListener('DOMContentLoaded', () => {
+    // Toggle Cart Modal
+    function toggleCart() {
+        const cartModal = document.getElementById("cartModal");
+        if (cartModal.style.display === "block") {
+            cartModal.style.display = "none";
+        } else {
+            cartModal.style.display = "block";
+        }
+    }
+
+    // Add event listener to the cart button
+    const cartButton = document.querySelector(".btnshopping");
+    if (cartButton) {
+        cartButton.addEventListener("click", toggleCart);
+    }
+
+    // Add event listener to the close button inside the cart modal
+    const closeCartButton = document.querySelector(".close-cart");
+    if (closeCartButton) {
+        closeCartButton.addEventListener("click", toggleCart);
+    }
+});
+            </script>
+
+            <!-- Login/Register Form -->
+            <div class="login-form" id="loginForm" style="display: none;">
+                <div class="form-container">
+                    <h2>ĐĂNG NHẬP TÀI KHOẢN</h2>
+                    <form>
+                        <label for="email">Nhập email và mật khẩu của bạn:</label>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="password" id="password" placeholder="Mật khẩu" required>
+                        <!-- <p class="info"><a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a> apply.</p> -->
+                        <button type="submit" class="login-btn">ĐĂNG NHẬP</button>
+                    </form>
+                    <p>Khách hàng mới? <a href="#">Tạo tài khoản</a></p>
+                    <p>Quên mật khẩu? <a href="#">Khôi phục mật khẩu</a></p>
+                
+                </div>
+            </div>
+        </div>
+        <script>
+  
+// Add event listener to the login button and close button
+
+            </script>
+    </header>
+
+    <main>
+        <!-- Hero Section with Slider -->
+        <section class="hero">
+            <div class="slider">
+                <div class="slide">
+                    <img src="img/br1.png" alt="Slide 1">
+                </div>
+                <div class="slide">
+                    <img src="img/br2.png" alt="Slide 2">
+                </div>
+                <div class="slide">
+                    <img src="img/br3.png" alt="Slide 3">
+                    
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev">❮</button>
+                <button class="next">❯</button>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector(".hero .slider");
+    const slides = document.querySelectorAll(".hero .slide");
+    const prevButton = document.querySelector(".hero .prev");
+    const nextButton = document.querySelector(".hero .next");
+    const sidebarButtons = document.querySelectorAll(".hero-sidebar .sidebar-btn");
+
+    let currentIndex = 0;
+
+    const updateSliderPosition = () => {
+        slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const showNextSlide = () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        updateSliderPosition();
+    };
+
+    const showPrevSlide = () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        updateSliderPosition();
+    };
+
+    // Add event listeners for next and previous buttons
+    nextButton.addEventListener("click", showNextSlide);
+    prevButton.addEventListener("click", showPrevSlide);
+
+    // Add event listeners for sidebar buttons
+    sidebarButtons.forEach((button) => {
+        button.addEventListener("click", (e) => {
+            currentIndex = parseInt(e.target.getAttribute("data-slide"));
+            updateSliderPosition();
+        });
+        
+    });
+});
+        </script>
+
+        <!-- Product Categories Section -->
+        <section class="product-categories">
+            <h2>DANH MỤC SẢN PHẨM</h2>
+            <div class="carousel">
+                <div class="category-item">
+                    <img src="img/dm1.png" alt="Áo Polo">
+                    <div class="category-info">
+                        <span>Áo Polo</span>
+                        <button>➔</button>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="img/dm2.png" alt="Áo Thun">
+                    <div class="category-info">
+                        <span>Áo Thun</span>
+                        <button>➔</button>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="img/dm3.png" alt="Quần Jeans">
+                    <div class="category-info">
+                        <span>Quần Jeans</span>
+                        <button>➔</button>
+                    </div>
+                </div>
+                <div class="category-item">
+                    <img src="img/dm4.png" alt="Quần Âu">
+                    <div class="category-info">
+                        <span>Quần Âu</span>
+                        <button>➔</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sale Products Section -->
+        <section class="sale-products">
+            <h2><span class="highlight-dot">•</span> SẢN PHẨM KHUYẾN MÃI</h2>
+            <div class="products">
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Trơn">
+                    <div class="product-info">
+                        <p>+5 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo trơn bo kẻ thêu logo ngực GSTP048</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-45%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Thể Thao">
+                    <div class="product-info">
+                        <p>+4 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo Polo thể thao can vải FSTP001</h3>
+                        <p class="price"><span class="discount">219,000₫</span> <span class="original">400,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-40%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Basic">
+                    <div class="product-info">
+                        <p>+1 Màu sắc</p>
+                        <p>+5 Kích thước</p>
+                        <h3>Áo Polo trơn basic thêu logo ngực ESTP038 - Nâu</h3>
+                        <p class="price"><span class="discount">199,000₫</span> <span class="original">330,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-30%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Quần Âu Slim-Fit">
+                    <div class="product-info">
+                        <p>+6 Màu sắc</p>
+                        <p>+5 Kích thước</p>
+                        <h3>Quần âu slim-fit cạp trơn - DABT900</h3>
+                        <p class="price"><span class="discount">349,000₫</span> <span class="original">500,000₫</span></p>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+            <button class="view-all" onclick="navigateToProducts()">XEM TẤT CẢ SẢN PHẨM KHUYẾN MÃI </button>
+            <script>
+                function navigateToProducts() {
+    window.location.href = "products.html";
+}
+            </script>
+                <section class="sale-products">
+            <h2><span class="highlight-dot">•</span> SẢN PHẨM Nổi Bật</h2>
+            <div class="products1">
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Trơn">
+                    <div class="product-info">
+                        <p>+5 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo trơn bo kẻ thêu logo ngực GSTP048</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-38%</div>
+                    <img src="img/hinhao/quan (1).webp" alt="Áo Polo Phối Màu">
+                    <div class="product-info">
+                        <p>+3 Màu sắc</p>
+                        <p>+4 Kích thước</p>
+                        <h3>Áo polo can phối thêu logo đại bằng GSTP047</h3>
+                        <p class="price"><span class="discount">299,000₫</span> <span class="original">480,000₫</span></p>
+                    </div>
+                </div>
+            
+                <!-- Add more product items to make 10 total -->
+            </div>
+            <button class="view-all" onclick="navigateToProducts()">XEM TẤT CẢ SẢN PHẨM </button>
+            <script>
+                function navigateToProducts() {
+                    window.location.href = "products.html";
+                }
+            </script>
+        </section>
+            </script>
+        </section>
+    </main>
+
+    <footer>
+                <footer class="footer">
+            <div class="footer-container">
+                <!-- Column 1: About -->
+                <div class="footer-column">
+                    <h3>Thời trang nam TORANO</h3>
+                    <p>Hệ thống thời trang cho phái mạnh hàng đầu Việt Nam, hướng tới phong cách nam tính, lịch lãm và trẻ trung.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="ti-facebook"></i></a>
+                        <a href="#"><i class="ti-twitter"></i></a>
+                        <a href="#"><i class="ti-instagram"></i></a>
+                        <a href="#"><i class="ti-tiktok"></i></a>
+                        <a href="#"><i class="ti-youtube"></i></a>
+                    </div>
+                    <h4>Phương thức thanh toán</h4>
+                    <div class="payment-methods">
+                        <img src="img/payment/vnpay.png" alt="VNPAY">
+                        <img src="img/payment/zalopay.png" alt="ZaloPay">
+                        <img src="img/payment/moca.png" alt="Moca">
+                        <img src="img/payment/kredivo.png" alt="Kredivo">
+                        <img src="img/payment/visa.png" alt="Visa">
+                    </div>
+                </div>
+        
+                <!-- Column 2: Contact -->
+                <div class="footer-column">
+                    <h3>Thông tin liên hệ</h3>
+                    <p><strong>Địa chỉ:</strong> Tầng 8, tòa nhà Ford, số 313 Trường Chinh, quận Thanh Xuân, Hà Nội</p>
+                    <p><strong>Điện thoại:</strong> 0964942121</p>
+                    <p><strong>Fax:</strong> 0904636356</p>
+                    <p><strong>Email:</strong> cskh@torano.vn</p>
+                    <h4>Phương thức vận chuyển</h4>
+                    <div class="shipping-methods">
+                        <img src="img/shipping/ghn.png" alt="GHN">
+                        <img src="img/shipping/ninja.png" alt="Ninja Van">
+                        <img src="img/shipping/ahamove.png" alt="Ahamove">
+                        <img src="img/shipping/jt.png" alt="J&T Express">
+                    </div>
+                </div>
+        
+                <!-- Column 3: Links -->
+                <div class="footer-column">
+                    <h3>Nhóm liên kết</h3>
+                    <ul>
+                        <li><a href="#">Tìm kiếm</a></li>
+                        <li><a href="#">Giới thiệu</a></li>
+                        <li><a href="#">Chính sách đổi trả</a></li>
+                        <li><a href="#">Chính sách bảo mật</a></li>
+                        <li><a href="#">Tuyển dụng</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Column 4: Newsletter -->
+                <div class="footer-column">
+                    <h3>Đăng ký nhận tin</h3>
+                    <p>Để cập nhật những sản phẩm mới, nhận thông tin ưu đãi đặc biệt và thông tin giảm giá khác.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Nhập email của bạn">
+                        <button type="submit">ĐĂNG KÝ</button>
+                    </form>
+                   
+                </div>
+            </div>
+        </footer>
+    </footer>
+    
+</body>
+<script src="scripts/app.js"></script>
+</html>

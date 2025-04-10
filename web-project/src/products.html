@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sản Phẩm Mới</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/addcart.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"> <img  class="logo"  src="img/logo.png" ></a>
+    
+    </img>
+       <nav>
+           <ul>
+              <li><a href="products.html">Sản phẩm </a></li>
+               <li><a href="#">Sale</a></li>
+               <li><a href="#">Áo nam</a></li>
+               <li><a href="#">Quần nam</a></li>
+               <li><a href="#">Bộ sưu tập</a></li>
+               <li><a href="#">Hệ thống cửa hàng</a></li>
+               <li><a href="#">Ưu đãi</a></li>
+           </ul>
+       </nav>
+       <!-- From Uiverse.io by alexruix --> 
+<div class="group">
+   <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+       <g>
+           <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path>
+       </g>
+   </svg>
+   <input placeholder="Search" type="search" class="input">
+</div>
+       <div class="icons">
+           <a href="giohang.html">
+           <button class="btnshopping">
+               <!-- <i class="" style="font-size: 28px"></i> -->
+               <svg  height="28" width="28" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M12 13a5 5 0 0 1-5-5h2a3 3 0 0 0 3 3a3 3 0 0 0 3-3h2a5 5 0 0 1-5 5m0-10a3 3 0 0 1 3 3H9a3 3 0 0 1 3-3m7 3h-2a5 5 0 0 0-5-5a5 5 0 0 0-5 5H5c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z" fill="currentColor"/>
+               </svg>
+           </button>
+       </a>
+           <button class="btnlogin">
+               <svg height="26" width="26" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                   <path d="M5 5a5 5 0 0 1 10 0v2A5 5 0 0 1 5 7V5zM0 16.68A19.9 19.9 0 0 1 10 14c3.64 0 7.06.97 10 2.68V20H0v-3.32z" fill="currentColor"/>
+               </svg>
+           </button>
+    </header>
+
+    <main class="product-page">
+        <!-- Sidebar Filters -->
+        <aside class="filters">
+            <h2>Bộ lọc</h2>
+            <div class="filter-group">
+                <h3>Danh mục sản phẩm</h3>
+                <ul>
+                    <li><a href="#">Sản phẩm mới</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Áo nam</a></li>
+                    <li><a href="#">Quần nam</a></li>
+                    <li><a href="#">Bộ sưu tập</a></li>
+                    <li><a href="#">Hệ thống cửa hàng</a></li>
+                    <li><a href="#">Ưu đãi</a></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h3>Khoảng giá</h3>
+                <input type="range" min="0" max="3000000" step="10000">
+            </div>
+            <div class="filter-group">
+                <h3>Màu sắc</h3>
+                <ul>
+                    <li><a href="#">Đỏ</a></li>
+                    <li><a href="#">Xanh</a></li>
+                    <li><a href="#">Trắng</a></li>
+                    <li><a href="#">Đen</a></li>
+                </ul>
+            </div>
+           
+        </aside>
+
+        <!-- Product List -->
+        <section class="product-list">
+            <div class="product-header">
+                <h1>Sản phẩm mới</h1>
+                <p></p>
+                <div class="sort">
+                    <label for="sort">Sắp xếp theo:</label>
+                    <select id="sort">
+                        <option value="popular">Sản phẩm nổi bật</option>
+                        <option value="price-asc">Giá tăng dần</option>
+                        <option value="price-desc">Giá giảm dần</option>
+                    </select>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product-item">
+                    <img src="img/br1.png" alt="Product 1">
+                    <p>+3 Màu sắc</p>
+                    <p>+4 Kích thước</p>
+                    <h3>Quần short gió cạp lót chun GSBW005</h3>
+                    <p class="price">380,000₫</p>
+                    <button class="add-to-cart" onclick="addToCart('Quần short gió cạp lót chun GSBW005', 380000)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <img src="img/br2.png" alt="Product 2">
+                    <p>+3 Màu sắc</p>
+                    <p>+4 Kích thước</p>
+                    <h3>Quần short ni basic FSBS004</h3>
+                    <p class="price">320,000₫</p>
+                    <button class="add-to-cart" onclick="addToCart('Quần short ni basic FSBS004', 320000)">Thêm vào giỏ hàng</button>
+                </div>
+                <div class="product-item">
+                    <div class="discount-badge">-25%</div>
+                    <img src="img/br3.png" alt="Product 3">
+                    <p>+3 Màu sắc</p>
+                    <p>+5 Kích thước</p>
+                    <h3>Quần short đùi basic, có quai nhẹ FSBIO04</h3>
+                    <p class="price"><span class="discount">299,000₫</span> <span class="original">400,000₫</span></p>
+                    <button class="add-to-cart">Thêm vào giỏ hàng</button>
+                </div>
+                <!-- Add more products as needed -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+     
+    </footer>
+</body>
+</html>
